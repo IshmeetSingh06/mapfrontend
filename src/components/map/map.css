@@ -1,12 +1,19 @@
-.map-container{
-    align-items:center;
-    margin-left: 50px;
-    margin-right: 60px;
-    margin-top: 50px;
+
+.title {
+    font-size: 2rem;
+    margin-top: 6px;
+    text-align: center;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.map-charts{
-    position: relative;
-    align-items: center;
-    margin-top: 20px;
+.map-container{
+    border-style: solid;
+    border-radius: 32px;
+    border-width: 5px;
+    border-color: black;
+    align-items:center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
 }
