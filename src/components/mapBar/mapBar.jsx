@@ -19,7 +19,7 @@ const MapBar = ({ data }) => {
   data1.push({ name: "$1k-5k", data: [range2] });
   data1.push({ name: "$<1k", data: [range3] });
 
-  console.log(data1);
+  //console.log(data1);
 
   return (
     <div className="bar-container">

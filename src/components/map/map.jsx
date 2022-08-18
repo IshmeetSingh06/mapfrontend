@@ -6,7 +6,7 @@ import {
   Popup,
   TileLayer,
 } from "react-leaflet";
-import axios from "axios";
+import {axiosInstance} from "../../config";
 import { useState } from "react";
 import MapBar from "../mapBar/mapBar";
 
@@ -14,7 +14,7 @@ const blueOption1 = { color: "green", fillColor: "green" };
 const blueOption2 = { color: "red", fillColor: "red" };
 const blueOption3 = { color: "blue", fillColor: "blue" };
 
-const BASE_URL = process.env.REACT_PUBLIC_BASE_URL || "http://localhost:8000/reigon";
+//const BASE_URL = process.env.REACT_PUBLIC_BASE_URL;
 
 const MapView = () => {
   const position = [25, -325];
@@ -25,7 +25,7 @@ const MapView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(BASE_URL);
+        const res = await axiosInstance.get();
         setData(res.data);
       } catch (err) {
         console.log(err);
@@ -59,7 +59,7 @@ const MapView = () => {
               colorOpt = blueOption3;
             }
 
-            const str = `${singleData.name}` + " " + `${singleData.data}`;
+            //const str = `${singleData.name}` + " " + `${singleData.data}`;
             return (
               <div>
                 <Circle
