@@ -14,7 +14,7 @@ const blueOption1 = { color: "green", fillColor: "green" };
 const blueOption2 = { color: "red", fillColor: "red" };
 const blueOption3 = { color: "blue", fillColor: "blue" };
 
-const BASE_URL = "http://localhost:8000/reigon";
+const BASE_URL = process.env.REACT_PUBLIC_BASE_URL || "http://localhost:8000/reigon";
 
 const MapView = () => {
   const position = [25, -325];
