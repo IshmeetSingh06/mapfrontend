@@ -1,0 +1,12 @@
+.map-container{
+    align-items:center;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+
+.map-charts{
+    position: relative;
+    align-items: center;
+    margin-top: 20px;
+}
